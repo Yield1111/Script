@@ -3495,7 +3495,7 @@ end)
 
 
 TrollSection:NewButton("Dark Dex", "🤓🤓🤡🤡💯", function()
-    loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"))()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/fPP8bZ8Z"))()
 end)
 
 
@@ -6905,4 +6905,44 @@ FlingArms.MouseButton1Click:connect(function()
         FlingArms.BackgroundColor3 = rcol
     end
 end)
+end)
+
+
+-- Fe
+
+local Fe = Window:NewTab("Fe")
+local FeSection = Fe:NewSection("Fe stuff")
+
+
+FeSection:NewButton("Netless bypass", "Ur limbs should't fall off (i hope)", function()
+	for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+		if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+		game:GetService("RunService").Heartbeat:connect(function()
+		v.Velocity = Vector3.new(0,35,0)
+		wait(0.5)
+		end)
+		end
+		end
+		
+		game:GetService("StarterGui"):SetCore("SendNotification", { 
+			Title = "Notification";
+			Text = "Netless activated";
+			Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+		Duration = 16;
+end)
+
+
+FeSection:NewButton("pp R6", "Copy hat ids in the hat ids section", function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Yield1111/idk-pp/main/Idk%20pp"))()
+end)
+
+
+-- IDS
+
+local ids = Window:NewTab("Ids")
+local idsSection = ids:NewSection("Hat Ids")
+
+
+idsSection:NewButton("pp Hats", "Click it to copy it, then paste it into a notepad", function()
+	setclipboard("3398308134, 3409612660, 3822880197, 4047554959, 4584029953, 3443038622, 3656493304, 3940375351, 3033908130, 4154538250")
 end)
