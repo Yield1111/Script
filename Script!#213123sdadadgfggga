@@ -6944,5 +6944,5 @@ local idsSection = ids:NewSection("Hat Ids")
 
 
 idsSection:NewButton("pp Hats", "Click it to copy it, then paste it into a notepad", function()
-	setclipboard("")
+	setclipboard("3398308134, 3940375351, 4584042059, 3033910400, 3438342658, 4154538250, 3992084515, 3822880197, 4489239608, 4324158403")
 end)
