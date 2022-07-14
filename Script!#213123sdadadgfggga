@@ -6932,7 +6932,7 @@ FeSection:NewButton("Netless bypass", "Ur limbs should't fall off (i hope)", fun
 end)
 
 
-FeSection:NewButton("pp R6 (semi broken)", "Copy hat ids in the hat ids section", function()
+FeSection:NewButton("pp R6 semi broken", "Copy hat ids in the hat ids section", function()
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Yield1111/idk-pp/main/Idk%20pp"))()
 end)
 
